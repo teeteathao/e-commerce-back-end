@@ -20,14 +20,18 @@ Category.hasMany(Product, {
 // Products belongToMany Tags (through ProductTag)
 Product.belongsToMany(Tag, {
   // Define the third table needed to store the foreign keys
-  through: ProductTag,
+  through: {
+    model: ProductTag,
+    unique: false,
     foreignKey: 'product_id',
-  
+  }
 });
 // Tags belongToMany Products (through ProductTag)
 Tag.belongsToMany(Product, {
-  through: ProductTag,
-    foreignKey: 'tag_id',
+  through: {
+    model: ProductTag,
+    unique: false
+  }
 })
 
 
