@@ -8,8 +8,6 @@ Internet retail, also known as **e-commerce**, is the largest sector of the elec
 
 Given a functional Express.js API, I add my database name, MySQL username, and MySQL password to an environment variable file. Then I am able to connect to a database using Sequelize. When I enter schema and seed commands then a development database is created and is seeded with test data. In Insomnia, the GET routes for categories, products, or tags will display the data for each of these routes in a formatted JSON. Additionally, the API POST, PUT, and DELETE routes in Insomnia will create, update, and delete data in the database.
 
--[MySQL2](https://www.npmjs.com/package/mysql2)
-
 ## Visual
 
 The following animation shows the application's GET routes to return all categories, all products, and all tags being tested in Insomnia:
@@ -27,5 +25,6 @@ The following animation shows the application's POST, PUT, and DELETE routes for
 
 ## Walkthrough Video 
 
+https://watch.screencastify.com/v/x4nWIRdA2pM7LqBphVj9
 
 
